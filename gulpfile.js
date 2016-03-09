@@ -97,7 +97,7 @@ gulp.task('sass', function() {
   // Minify CSS if run wtih --production flag
   var minifycss = $.if(isProduction, $.minifyCss());
 
-  return gulp.src('assets/scss/foundation.scss')
+  return gulp.src('scss/foundation.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       includePaths: PATHS.sass
@@ -223,7 +223,7 @@ gulp.task('default', ['build', 'browser-sync'], function() {
   }
 
   // Sass Watch
-  gulp.watch(['assets/scss/**/*.scss'], ['sass'])
+  gulp.watch(['scss/**/*.scss'], ['sass'])
     .on('change', function(event) {
       logFileChange(event);
     });

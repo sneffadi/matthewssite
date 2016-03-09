@@ -1,0 +1,221 @@
+/*
+    My custom settings. These variables are copied from _settings.css
+    This file will only contain uncommented settings that are actually used in the theme.
+*/
+
+// Set site width
+$grid-row-width: rem-calc(1000);
+$column-gutter: rem-calc(30);
+$imgPath: "/wp-content/uploads";
+//$imgPath: "http://localhost/dietpilluniverse.com/wp-content/uploads";
+$grid-column-count: 24;
+
+// Typography
+$font-family-sans-serif: "proxima-nova", sans-serif;
+$font-family-sans-serif-heading: "proxima-nova-condensed", sans-serif;
+$font-family-serif: "merriweather", serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+
+$h1-font-size: rem-calc(30);
+$h2-font-size: rem-calc(27);
+$h3-font-size: rem-calc(24);
+$h4-font-size: rem-calc(21);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+$h2-font-reduction: rem-calc(3);
+$font-weight-normal: normal !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: bold !default;
+$font-weight-x-bold: 800 !default;
+
+$header-line-height: 1.1;
+$subheader-line-height: 1.2;
+$paragraph-line-height: 1.45;
+$paragraph-font-size: rem-calc(16);
+
+// Foundation color naming conventions
+$white: #FFFFFF;
+$ghost: #FAFAFA;
+$vapor: #F6F6F6;
+$white-smoke: #F5F5F5;
+$silver: #EFEFEF;
+$smoke: #EEEEEE;
+$gainsboro: #DDDDDD;
+$iron: #CCCCCC;
+$base: #AAAAAA;
+$silver: #BBBBBB;
+$aluminum: #999999;
+$jumbo: #888888;
+$monsoon: #777777;
+$steel: #666666;
+$charcoal: #555555;
+$tuatara: #444444;
+$oil: #333333;
+$jet: #444;
+$black: #000000;
+$viking: #ca3fd0;
+$cerulean: #0ab1c5;
+$gray: #F9F9F9;
+$curious-blue: #2597CC;
+$mercury: #e7e7e7;
+$link-water: #DBECF4;
+$transparent: rgba(0, 0, 0, 0);
+$yellow-green: #B9E679;
+$conifer: #9CD846;
+$atlantis: #91D33B;
+$sushi: #8DD137;
+$minty: #28937e;
+$orangy: #f68a32;
+$bastille: #231d26;
+$porcelain: #f7f9f9;
+$bermuda-gray: #6891AE;
+$flame-pea: #DA5E33;
+$amour: #FAF0F4;
+$nevada: #67727B;
+$cadillac: #af5474;
+$eastern-blue: #2BB2B2;
+$alto: #d3d3d3;
+$dusty-gray: #969696;
+$fun-green: #009F17;
+$bombay: #AAABAD;
+$monza: #C70038;
+$mine-shaft: #363636;
+$concrete: #F2F2F2;
+$endeavour: #014F9C;
+$seashell: #F1F1F1;
+$blue: #0668c0;
+$lima: #51CE11;
+$japanese-laurel: #009F00;
+$red: #DE0006;
+$siren: #7A0041;
+$thunderbird: #d91f1a;
+
+/*=============================================
+=     Background Color and Font Color       =
+=============================================*/
+
+$body-bg: $concrete;
+$row-bg: $white;
+$body-font-color: $bastille;
+$secondary-font-color: $thunderbird;
+$anchor-font-color: $thunderbird; //link color
+$success-color: $lima;
+$primary-color: $siren; //color for a lot of elements
+$secondary-color: $dusty-gray; //color of read review button
+$upsell-bg: $link-water; //sidebar upsell bg;
+$upsell-border-color: $curious-blue; //sidebar upsell border color;
+$topbar-bg: $body-bg; // desktop nav bg
+$topbar-bg-color: $white;
+$topbar-dropdown-bg: $white;
+$topbar-border-bottom: none;
+$topbar-bg-hover: none;
+$tabbar-bg: $white; // small/medium nav bg
+$tabbar-menu-icon-color: $aluminum; // color of hamburger thing
+$tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -10%);
+$guarantee-bg: $vapor; //guarantee background color
+$guarantee-text: $bastille; //guarantee text color
+$shipping-color: $siren;
+
+$off-canvas-bg: $white-smoke; //mobile slide out nav bg color
+$off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -10%);
+$off-canvas-bg-active: scale-color($tabbar-bg, $lightness: -10%);
+$off-canvas-link-color: $monsoon;
+$off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -10%);
+$off-canvas-overlay-box-shadow: -4px 0 4px rgba($black, 0.2), 4px 0 4px rgba($black, 0.2);
+
+$logo-height: rem-calc(45);
+$logo-width: rem-calc(273);
+$logo-max-width: none;
+$logo-section-height: auto;
+
+$logo-section-padding: 0 0;
+$padding-for-logo-div: rem-calc(5) rem-calc(15) rem-calc(16) rem-calc(15);
+
+$rating-bg-color: $japanese-laurel; //backgorund of rating bar
+$rating-border-color: $silver; //border of rating bar
+
+$topbar-dropdown-link-bg: $charcoal;
+$topbar-link-color: inherit;
+$topbar-link-color-hover: inherit;
+$topbar-link-color-active: inherit;
+$topbar-link-color-active-hover: inherit;
+
+/*=====  Background Color and Font Color   ======*/
+
+// We use these to control various global styles
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$header-font-family: $font-family-sans-serif-heading;
+$body-font-style: normal;
+$header-font-weight: $font-weight-bold;
+$header-text-rendering: optimizeLegibility;
+$anchor-text-decoration: underline;
+$anchor-text-decoration-hover: underline;
+$body-border-color: #D7D7D7;
+
+//Topbar
+$topbar-height: rem-calc(40); //height of header
+$topbar-title-weight: $font-weight-normal;
+$topbar-title-font-size: rem-calc(16);
+$topbar-link-weight: $font-weight-normal;
+$topbar-link-font-size: rem-calc(14);
+$tabbar-margin-top: rem-calc(10); // vertically center logo
+
+$tip-top-bg-color: $white;
+$tip-top-color: $body-font-color;
+$tip-top-height: rem-calc(32);
+$tip-top-font-size: rem-calc(14);
+$tip-top-link-color: inherit;
+
+// We use these to build padding for buttons
+$button-tny: rem-calc(8.5);
+$button-sml: rem-calc(10.5);
+$button-med: rem-calc(10.5);
+$button-lrg: rem-calc(18);
+
+// We use these to control button text styles.
+$button-font-family: $font-family-sans-serif-heading;
+$button-font-tny: rem-calc(14);
+$button-font-sml: rem-calc(16);
+$button-font-med: rem-calc(16);
+$button-font-lrg: rem-calc(20);
+$button-font-weight: $font-weight-semibold;
+$button-font-align: center;
+$button-font-transform: uppercase;
+
+$button-bg-color: $success-color;
+$button-bg-hover: scale-color($success-color, $lightness: -10%);
+
+//Ratings
+$rating-font-size: rem-calc(12);
+$inline-list-bottom-margin: rem-calc(0);
+$front-ratings-bg: $alto; //background for empty stars on front page
+$ratings-table-bg: $seashell;
+$ratings-border: $silver;
+$all-prods-ratings-bg: $gainsboro;
+
+//sidebar
+$sidebar-text-margin: 0 0 rem-calc(8) 0;
+$sidebar-font-size: rem-calc(14);
+
+// Media query breakpoints
+$small-breakpoint: em-calc(640);
+$medium-breakpoint: em-calc(1024);
+$topbar-breakpoint: em-calc(820);
+$large-breakpoint: em-calc(1440);
+$xlarge-breakpoint: em-calc(1920);
+
+.small-column, .small-columns {
+    position: relative;
+    padding-left: $column-gutter / 6;
+    padding-right: $column-gutter / 6;
+    float: left;
+}
+
+.medium-column, .medium-columns {
+    position: relative;
+    padding-left: $column-gutter / 4;
+    padding-right: $column-gutter / 4;
+    float: left;
+}
