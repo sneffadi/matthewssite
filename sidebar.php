@@ -8,7 +8,7 @@
  */
 
 ?>
-<aside class="sidebar">
+<aside class="sidebar medium-6 columns hide-for-small">
 	<?php do_action( 'foundationpress_before_sidebar' ); ?>
 	<?php dynamic_sidebar( 'sidebar-widgets' ); ?>
 	<?php do_action( 'foundationpress_after_sidebar' ); ?>

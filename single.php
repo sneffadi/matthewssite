@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-<div id="single-post" role="main">
-
+<div id="single-post" class="row" >
+<div class="small-24 medium-18 columns">
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
@@ -40,8 +40,9 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_post_after_comments' ); ?>
 	</article>
 <?php endwhile;?>
-
+</div>
 <?php do_action( 'foundationpress_after_content' ); ?>
 <?php get_sidebar(); ?>
-</div>
+
+</div><!-- end .row -->
 <?php get_footer(); ?>
