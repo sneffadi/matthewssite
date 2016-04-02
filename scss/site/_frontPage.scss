@@ -1,17 +1,85 @@
-.front-page {
-	aside {
-		background:#90af64;
-		float:left;
-		width:50%;
-		height:100%;
-		display:block;
-		position:fixed;
+.home {
+	background:#000;
+	.top-bar {
+		@media #{$medium-up} {
+			display:none!important;
+		}	
 	}
-	article {
-		background:#000;
-		float:right;
-		width:50%;
-		display:block;
+	.title-bar-title {
+		display:none;
+	}
+	.front-page {
+		aside {
+			background:#90af64;
+			float:right;
+			width:50%;
+			height:100%;
+			display:block;
+			position:fixed;
+			right:0;
+			box-sizing:border-box;
+			background:url(#{$imgPath}/big-matthew.jpg)no-repeat;
+			background-size:cover;
+			background-position:center center;
+			top:0;
+			bottom:0;
+		}
+		article {
+			background:#000;
+			float:left;
+			width:50%;
+			display:block;
+			position:relative;
+			color:#fff;
+			box-sizing:border-box;
+			@media #{$medium-up} {
+				padding:10% 7% 0;
+				overflow:hidden;
+			}
+			@media #{$small-only} {
+				float:none;
+				width:100%;
+			}
+			h1 {
+				text-align:center;
+				line-height:1;
+				@media #{$medium-up} {
+					font-size:rem-calc(92);
+					margin-bottom:rem-calc(50);
+				}
+			}
+			p {
+				text-align:center;
+				font-size:rem-calc(20);
+			}
+			nav {
+				@media #{$small-only} {
+					display:none;
+				}
+				ul {
+					text-align:center;
+					li {
+						display:inline;
+						&:after {
+							content: '|';
+							padding-left:rem-calc(5);
+						}
+						a {
+							color:#fff;
+							text-decoration:none;
+							&:hover {
+								text-decoration:underline;
+							}
+						}
+					}
+					li:last-child {
+						&:after {
+							content:'';
+						}
+					}
+				}
+			}
+		}
 		
 	}
 }

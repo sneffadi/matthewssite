@@ -223,7 +223,7 @@ gulp.task('default', ['build', 'browser-sync'], function() {
   }
 
   // Sass Watch
-  gulp.watch(['scss/**/*.scss'], ['sass'])
+  gulp.watch(['scss/**/*.scss', 'modules/**/*.scss'], ['clean:css', 'sass'])
     .on('change', function(event) {
       logFileChange(event);
     });

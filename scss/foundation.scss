@@ -12,24 +12,24 @@
   Licensed under MIT Open Source
 */
 
+
 //  Settings
-@import '../assets/components/foundation-sites/scss/util/util';
-@import "config/settings"; // Foundation settings file.
-@import "config/_custom-settings.scss";
+@import "global/settings"; // Foundation settings file.
+@import "config/custom-settings.scss";
 
 // Foundation mixins & browser resets
 @import '../assets/components/foundation-sites/scss/foundation';
 
 // WP overrides
-/*@import "global/wp-admin"; // Fix issues with wp-admin bar positioning
-@import "global/wp-overrides"; // Override the default WordPress styling for some elements*/
+@import "global/wp-admin"; // Fix issues with wp-admin bar positioning
+@import "global/wp-overrides"; // Override the default WordPress styling for some elements
 
 // Third-party libraries
 @import 'font-awesome';
 @import 'motion-ui';
 
 // Foundation global styles 
-//@include foundation-global-styles;
+@include foundation-global-styles;
 
 // Individual foundation components
 @include foundation-grid;
@@ -77,3 +77,4 @@
 */
 
 @import "site/frontPage";
+@import "site/navigation";

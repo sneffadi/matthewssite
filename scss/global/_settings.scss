@@ -1,4 +1,4 @@
-/*//  Foundation for Sites Settings
+//  Foundation for Sites Settings
 //  -----------------------------
 //
 //  Table of Contents:
@@ -39,7 +39,7 @@
 //  34. Tooltip
 //  35. Top Bar
 
-@import '../../assets/components/foundation-sites/scss/util/util';
+@import 'util/util';
 
 // 1. Global
 // ---------
@@ -287,7 +287,7 @@ $drilldown-background: $white;
 
 $dropdown-padding: 1rem;
 $dropdown-border: 1px solid $medium-gray;
-$dropdown-font-size: 16rem;
+$dropdown-font-size: 1rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
@@ -528,6 +528,8 @@ $titlebar-icon-spacing: 0.25rem;
 // 34. Tooltip
 // -----------
 
+$has-tip-font-weight: $global-weight-bold;
+$has-tip-border-bottom: dotted 1px $dark-gray;
 $tooltip-background-color: $black;
 $tooltip-color: $white;
 $tooltip-padding: 0.75rem;
@@ -540,7 +542,8 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0;
-$topbar-background: #121212;
-$topbar-link-color: #ffffff;
-$topbar-input-width: 200px;*/
+$topbar-padding: 0.5rem;
+$topbar-background: $light-gray;
+$topbar-title-spacing: 1rem;
+$topbar-input-width: 200px;
+

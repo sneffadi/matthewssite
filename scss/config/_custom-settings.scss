@@ -6,15 +6,28 @@
 // Set site width
 $grid-row-width: rem-calc(1000);
 $column-gutter: rem-calc(30);
-$imgPath: "/wp-content/uploads";
-//$imgPath: "http://localhost/dietpilluniverse.com/wp-content/uploads";
+//$imgPath: "/wp-content/uploads";
+$imgPath: "http://localhost/matthewjelalian.com/wp-content/uploads";
 $grid-column-count: 24;
 
 // Typography
-$font-family-sans-serif: "proxima-nova", sans-serif;
-$font-family-sans-serif-heading: "proxima-nova-condensed", sans-serif;
-$font-family-serif: "merriweather", serif;
+$font-family-sans-serif: 'Quicksand', sans-serif;
+$font-family-sans-serif-heading: 'Kadwa', serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$body-font-family: $font-family-sans-serif;
+$header-font-family: $font-family-sans-serif-heading;
+
+$header-sizes: (
+  small: (
+    'h1': 30,
+    'h2': 27,
+    'h3': 24,
+    'h4': 21,
+    'h5': 18,
+    'h6': 16,
+  )
+);
 
 $h1-font-size: rem-calc(30);
 $h2-font-size: rem-calc(27);
