@@ -1,7 +1,8 @@
 .home {
 	background:#000;
 	.top-bar {
-		@media #{$medium-up} {
+		background:#000;
+		@media #{$large-up} {
 			display:none!important;
 		}	
 	}
@@ -43,9 +44,12 @@
 			h1 {
 				text-align:center;
 				line-height:1;
-				@media #{$medium-up} {
+				@media #{$large-up} {
 					font-size:rem-calc(92);
 					margin-bottom:rem-calc(50);
+				}
+				@media #{$medium-only} {
+					font-size:rem-calc(55);
 				}
 			}
 			p {
