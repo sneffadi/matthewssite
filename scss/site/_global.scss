@@ -6,6 +6,9 @@
 	padding-top:rem-calc(40);
 	padding-bottom:rem-calc(130);
 }
+#single-post {
+	padding-top:rem-calc(30);
+}
 .sticky {
 	@media #{$medium-up} {
 		position:fixed;
