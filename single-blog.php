@@ -27,17 +27,18 @@ get_header(); ?>
 					<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
 				</div>
 			</div>
-		<?php endif; ?>
+		<?php endif; 
+			echo 'here is the thing';
+			var_dump(comments_open());
+		?>
+
 
 		<?php the_content(); ?>
-		</div>
-		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-			<p><?php the_tags(); ?></p>
-		</footer>
 		<?php do_action( 'foundationpress_post_before_comments' ); ?>
 		<?php comments_template( '', true ); ?>
 		<?php do_action( 'foundationpress_post_after_comments' ); ?>
+		</div>
+		
 	</article>
 <?php endwhile;?>
 </div>

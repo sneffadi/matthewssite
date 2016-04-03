@@ -50,4 +50,9 @@ require_once( 'modules/_config.php' );
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
 
+function enable_comments_custom_post_type() {
+ add_post_type_support( 'blog', 'comments' );
+}
+add_action( 'init', 'enable_comments_custom_post_type', 11 );
+
 ?>

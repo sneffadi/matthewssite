@@ -27,7 +27,8 @@ function blog_post_type() {
 				'title', 
 				'editor',
 				'thumbnail',
-				'comments'
+				'comments',
+				'revisions'
 			),
 			'can_export' => true,
 			'taxonomies' => array(
