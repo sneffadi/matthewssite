@@ -119,3 +119,14 @@
     background-color:#000;
   }
 }
+.top-bar-left {
+  ul {
+    li.home {
+      font-family:$font-family-sans-serif-heading;
+      a{
+        color:#fff;
+        text-decoration:none;
+      }
+    }
+  }
+}

@@ -12,14 +12,21 @@
 ?>
 
 		</section>
+
 		<div id="footer-container">
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
+				<?php //dynamic_sidebar( 'footer-widgets' ); ?>
+				<div class="row">
+					<div class="small-24 columns">
+						<p>&copy; MatthewJelalian.com <?php echo date('Y') ?></p>
+						<p>Website Built by Stephanie Jelalian</p>
+					</div>
+				</div>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
 		</div>
-
+	</div> <!-- end wrapper -->
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>

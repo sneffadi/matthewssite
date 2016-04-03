@@ -44,9 +44,12 @@
 			h1 {
 				text-align:center;
 				line-height:1;
-				@media #{$large-up} {
+				@media #{$xlarge-up} {
 					font-size:rem-calc(92);
 					margin-bottom:rem-calc(50);
+				}
+				@media #{$large-only} {
+					font-size:rem-calc(75);
 				}
 				@media #{$medium-only} {
 					font-size:rem-calc(55);
