@@ -33,3 +33,12 @@ footer {
 		margin-bottom:0;
 	}
 }
+.portfolio-pub {
+	border:1px solid $black;
+	margin-bottom:rem-calc(30);
+	padding-top:rem-calc(15);
+	padding-bottom:rem-calc(15);
+	ul {
+		margin-left:rem-calc(20);
+	}
+}
