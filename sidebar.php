@@ -40,6 +40,7 @@
 				<h3>Social Media</h3>
 				<a href="https://www.facebook.com/jelaliam/"><i class="fa fa-facebook-official"></i></a>
 				<a href="https://twitter.com/jelaliam?lang=en"><i class="fa fa-twitter-square"></i></a>
+				<a href="https://www.linkedin.com/in/matthew-jelalian-191926106"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
