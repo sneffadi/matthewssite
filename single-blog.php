@@ -15,6 +15,13 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
 		<header>
+			<?php if(in_category("grading-the-media")) {
+				echo '<img src="' . do_shortcode('[upload_dir]') .'GradingTheMediaBanner.jpg">';
+				} elseif(in_category("journo-job-hacks")) {
+					echo '<img src="' . do_shortcode('[upload_dir]') .'JournoJobHacksBanner.jpg">';
+				} elseif(in_category("news-worth-knowing")) {
+					echo '<img src="' . do_shortcode('[upload_dir]') .'NewsWorthKnowingBanner.jpg">';
+				} ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php foundationpress_entry_meta(); ?>
 		</header>
