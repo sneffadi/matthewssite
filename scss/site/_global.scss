@@ -20,10 +20,18 @@
 	}
 }
 .contact-social {
-	a {
-		float:left;
-		margin-right:rem-calc(8);
+	ul {
+		li {
+			display:inline;
+			list-style-type:none;
+			a {
+				.fa {
+					font-size:rem-calc(35);
+				}
+			}
+		}
 	}
+	
 }
 footer {
 	background:$footer-background;
