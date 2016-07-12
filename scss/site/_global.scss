@@ -19,6 +19,12 @@
 		border-top:0;
 	}
 }
+.contact-social {
+	a {
+		float:left;
+		margin-right:rem-calc(8);
+	}
+}
 footer {
 	background:$footer-background;
 	width:100%;
