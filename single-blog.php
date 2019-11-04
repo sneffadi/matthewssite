@@ -35,8 +35,6 @@ get_header(); ?>
 				</div>
 			</div>
 		<?php endif; 
-			echo 'here is the thing';
-			var_dump(comments_open());
 		?>
 
 
